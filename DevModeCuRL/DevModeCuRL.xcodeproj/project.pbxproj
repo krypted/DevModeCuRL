@@ -1,0 +1,702 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F978C8C281BF7AC00CD4D5F /* PostmanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F978C8B281BF7AC00CD4D5F /* PostmanApp.swift */; };
+		4F978C8E281BF7AC00CD4D5F /* RequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F978C8D281BF7AC00CD4D5F /* RequestView.swift */; };
+		4F978C90281BF7AE00CD4D5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F978C8F281BF7AE00CD4D5F /* Assets.xcassets */; };
+		4F978C93281BF7AE00CD4D5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F978C92281BF7AE00CD4D5F /* Preview Assets.xcassets */; };
+		4F978C9D281BF7AE00CD4D5F /* PostmanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F978C9C281BF7AE00CD4D5F /* PostmanTests.swift */; };
+		4F978CA7281BF7AE00CD4D5F /* PostmanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F978CA6281BF7AE00CD4D5F /* PostmanUITests.swift */; };
+		4F978CA9281BF7AE00CD4D5F /* PostmanUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F978CA8281BF7AE00CD4D5F /* PostmanUITestsLaunchTests.swift */; };
+		4F978CB6281C133F00CD4D5F /* ResponseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F978CB5281C133F00CD4D5F /* ResponseView.swift */; };
+		4F978CB8281C135100CD4D5F /* RequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F978CB7281C135100CD4D5F /* RequestViewModel.swift */; };
+		B6039066281CF591002512AB /* ResponseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6039065281CF591002512AB /* ResponseViewModel.swift */; };
+		B6518E7828340EAF00892F0B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B6518E7728340EAF00892F0B /* Alamofire */; };
+		B653DF6A282ECCC800DFAB3E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B653DF69282ECCC800DFAB3E /* NetworkManager.swift */; };
+		B6A7BB7B282055AF00A5FEAE /* OIDCLite in Frameworks */ = {isa = PBXBuildFile; productRef = B6A7BB7A282055AF00A5FEAE /* OIDCLite */; };
+		B6A7BB7E282058FE00A5FEAE /* OIDCLiteHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A7BB7D282058FE00A5FEAE /* OIDCLiteHelper.swift */; };
+		B6DA029A282D8C6C00516612 /* OAuth2TokenRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DA0299282D8C6C00516612 /* OAuth2TokenRequestView.swift */; };
+		B6DA029D282D8CB600516612 /* OAuth2TokenRequestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DA029C282D8CB600516612 /* OAuth2TokenRequestViewModel.swift */; };
+		B6DA02A0282D907800516612 /* URLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DA029F282D907800516612 /* URLHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4F978C99281BF7AE00CD4D5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F978C80281BF7AC00CD4D5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F978C87281BF7AC00CD4D5F;
+			remoteInfo = Postman;
+		};
+		4F978CA3281BF7AE00CD4D5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F978C80281BF7AC00CD4D5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F978C87281BF7AC00CD4D5F;
+			remoteInfo = Postman;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4F978C88281BF7AC00CD4D5F /* Postman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Postman.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F978C8B281BF7AC00CD4D5F /* PostmanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmanApp.swift; sourceTree = "<group>"; };
+		4F978C8D281BF7AC00CD4D5F /* RequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestView.swift; sourceTree = "<group>"; };
+		4F978C8F281BF7AE00CD4D5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4F978C92281BF7AE00CD4D5F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4F978C98281BF7AE00CD4D5F /* PostmanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostmanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F978C9C281BF7AE00CD4D5F /* PostmanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmanTests.swift; sourceTree = "<group>"; };
+		4F978CA2281BF7AE00CD4D5F /* PostmanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostmanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F978CA6281BF7AE00CD4D5F /* PostmanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmanUITests.swift; sourceTree = "<group>"; };
+		4F978CA8281BF7AE00CD4D5F /* PostmanUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostmanUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4F978CB5281C133F00CD4D5F /* ResponseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseView.swift; sourceTree = "<group>"; };
+		4F978CB7281C135100CD4D5F /* RequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestViewModel.swift; sourceTree = "<group>"; };
+		B6039065281CF591002512AB /* ResponseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseViewModel.swift; sourceTree = "<group>"; };
+		B653DF69282ECCC800DFAB3E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B6A7BB7D282058FE00A5FEAE /* OIDCLiteHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OIDCLiteHelper.swift; sourceTree = "<group>"; };
+		B6DA0298282D88EC00516612 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B6DA0299282D8C6C00516612 /* OAuth2TokenRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth2TokenRequestView.swift; sourceTree = "<group>"; };
+		B6DA029C282D8CB600516612 /* OAuth2TokenRequestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth2TokenRequestViewModel.swift; sourceTree = "<group>"; };
+		B6DA029F282D907800516612 /* URLHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F978C85281BF7AC00CD4D5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6A7BB7B282055AF00A5FEAE /* OIDCLite in Frameworks */,
+				B6518E7828340EAF00892F0B /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F978C95281BF7AE00CD4D5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F978C9F281BF7AE00CD4D5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F978C7F281BF7AC00CD4D5F = {
+			isa = PBXGroup;
+			children = (
+				4F978C8A281BF7AC00CD4D5F /* Postman */,
+				4F978C9B281BF7AE00CD4D5F /* PostmanTests */,
+				4F978CA5281BF7AE00CD4D5F /* PostmanUITests */,
+				4F978C89281BF7AC00CD4D5F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4F978C89281BF7AC00CD4D5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F978C88281BF7AC00CD4D5F /* Postman.app */,
+				4F978C98281BF7AE00CD4D5F /* PostmanTests.xctest */,
+				4F978CA2281BF7AE00CD4D5F /* PostmanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F978C8A281BF7AC00CD4D5F /* Postman */ = {
+			isa = PBXGroup;
+			children = (
+				B6DA0298282D88EC00516612 /* Info.plist */,
+				4F978C8B281BF7AC00CD4D5F /* PostmanApp.swift */,
+				B6A7BB7C282058EE00A5FEAE /* Utility */,
+				4F978CB9281C136900CD4D5F /* RequestView */,
+				B6039064281CF580002512AB /* ResponseView */,
+				4F978C8F281BF7AE00CD4D5F /* Assets.xcassets */,
+				4F978C91281BF7AE00CD4D5F /* Preview Content */,
+			);
+			path = Postman;
+			sourceTree = "<group>";
+		};
+		4F978C91281BF7AE00CD4D5F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4F978C92281BF7AE00CD4D5F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4F978C9B281BF7AE00CD4D5F /* PostmanTests */ = {
+			isa = PBXGroup;
+			children = (
+				4F978C9C281BF7AE00CD4D5F /* PostmanTests.swift */,
+			);
+			path = PostmanTests;
+			sourceTree = "<group>";
+		};
+		4F978CA5281BF7AE00CD4D5F /* PostmanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4F978CA6281BF7AE00CD4D5F /* PostmanUITests.swift */,
+				4F978CA8281BF7AE00CD4D5F /* PostmanUITestsLaunchTests.swift */,
+			);
+			path = PostmanUITests;
+			sourceTree = "<group>";
+		};
+		4F978CB9281C136900CD4D5F /* RequestView */ = {
+			isa = PBXGroup;
+			children = (
+				4F978C8D281BF7AC00CD4D5F /* RequestView.swift */,
+				4F978CB7281C135100CD4D5F /* RequestViewModel.swift */,
+				B6DA029B282D8C9F00516612 /* OAuth2TokenRequestView */,
+			);
+			path = RequestView;
+			sourceTree = "<group>";
+		};
+		B6039064281CF580002512AB /* ResponseView */ = {
+			isa = PBXGroup;
+			children = (
+				4F978CB5281C133F00CD4D5F /* ResponseView.swift */,
+				B6039065281CF591002512AB /* ResponseViewModel.swift */,
+			);
+			path = ResponseView;
+			sourceTree = "<group>";
+		};
+		B6A7BB7C282058EE00A5FEAE /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				B6A7BB7D282058FE00A5FEAE /* OIDCLiteHelper.swift */,
+				B6DA029F282D907800516612 /* URLHelper.swift */,
+				B653DF69282ECCC800DFAB3E /* NetworkManager.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		B6DA029B282D8C9F00516612 /* OAuth2TokenRequestView */ = {
+			isa = PBXGroup;
+			children = (
+				B6DA0299282D8C6C00516612 /* OAuth2TokenRequestView.swift */,
+				B6DA029C282D8CB600516612 /* OAuth2TokenRequestViewModel.swift */,
+			);
+			path = OAuth2TokenRequestView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F978C87281BF7AC00CD4D5F /* Postman */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F978CAC281BF7AE00CD4D5F /* Build configuration list for PBXNativeTarget "Postman" */;
+			buildPhases = (
+				4F978C84281BF7AC00CD4D5F /* Sources */,
+				4F978C85281BF7AC00CD4D5F /* Frameworks */,
+				4F978C86281BF7AC00CD4D5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Postman;
+			packageProductDependencies = (
+				B6A7BB7A282055AF00A5FEAE /* OIDCLite */,
+				B6518E7728340EAF00892F0B /* Alamofire */,
+			);
+			productName = Postman;
+			productReference = 4F978C88281BF7AC00CD4D5F /* Postman.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4F978C97281BF7AE00CD4D5F /* PostmanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F978CAF281BF7AE00CD4D5F /* Build configuration list for PBXNativeTarget "PostmanTests" */;
+			buildPhases = (
+				4F978C94281BF7AE00CD4D5F /* Sources */,
+				4F978C95281BF7AE00CD4D5F /* Frameworks */,
+				4F978C96281BF7AE00CD4D5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F978C9A281BF7AE00CD4D5F /* PBXTargetDependency */,
+			);
+			name = PostmanTests;
+			productName = PostmanTests;
+			productReference = 4F978C98281BF7AE00CD4D5F /* PostmanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4F978CA1281BF7AE00CD4D5F /* PostmanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F978CB2281BF7AE00CD4D5F /* Build configuration list for PBXNativeTarget "PostmanUITests" */;
+			buildPhases = (
+				4F978C9E281BF7AE00CD4D5F /* Sources */,
+				4F978C9F281BF7AE00CD4D5F /* Frameworks */,
+				4F978CA0281BF7AE00CD4D5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F978CA4281BF7AE00CD4D5F /* PBXTargetDependency */,
+			);
+			name = PostmanUITests;
+			productName = PostmanUITests;
+			productReference = 4F978CA2281BF7AE00CD4D5F /* PostmanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F978C80281BF7AC00CD4D5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					4F978C87281BF7AC00CD4D5F = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					4F978C97281BF7AE00CD4D5F = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 4F978C87281BF7AC00CD4D5F;
+					};
+					4F978CA1281BF7AE00CD4D5F = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 4F978C87281BF7AC00CD4D5F;
+					};
+				};
+			};
+			buildConfigurationList = 4F978C83281BF7AC00CD4D5F /* Build configuration list for PBXProject "Postman" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4F978C7F281BF7AC00CD4D5F;
+			packageReferences = (
+				B6A7BB79282055AF00A5FEAE /* XCRemoteSwiftPackageReference "OIDCLite" */,
+				B6518E7628340EAF00892F0B /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 4F978C89281BF7AC00CD4D5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F978C87281BF7AC00CD4D5F /* Postman */,
+				4F978C97281BF7AE00CD4D5F /* PostmanTests */,
+				4F978CA1281BF7AE00CD4D5F /* PostmanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F978C86281BF7AC00CD4D5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F978C93281BF7AE00CD4D5F /* Preview Assets.xcassets in Resources */,
+				4F978C90281BF7AE00CD4D5F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F978C96281BF7AE00CD4D5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F978CA0281BF7AE00CD4D5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F978C84281BF7AC00CD4D5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6A7BB7E282058FE00A5FEAE /* OIDCLiteHelper.swift in Sources */,
+				4F978C8E281BF7AC00CD4D5F /* RequestView.swift in Sources */,
+				B653DF6A282ECCC800DFAB3E /* NetworkManager.swift in Sources */,
+				4F978C8C281BF7AC00CD4D5F /* PostmanApp.swift in Sources */,
+				B6DA02A0282D907800516612 /* URLHelper.swift in Sources */,
+				B6039066281CF591002512AB /* ResponseViewModel.swift in Sources */,
+				4F978CB8281C135100CD4D5F /* RequestViewModel.swift in Sources */,
+				4F978CB6281C133F00CD4D5F /* ResponseView.swift in Sources */,
+				B6DA029A282D8C6C00516612 /* OAuth2TokenRequestView.swift in Sources */,
+				B6DA029D282D8CB600516612 /* OAuth2TokenRequestViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F978C94281BF7AE00CD4D5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F978C9D281BF7AE00CD4D5F /* PostmanTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F978C9E281BF7AE00CD4D5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F978CA7281BF7AE00CD4D5F /* PostmanUITests.swift in Sources */,
+				4F978CA9281BF7AE00CD4D5F /* PostmanUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4F978C9A281BF7AE00CD4D5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F978C87281BF7AC00CD4D5F /* Postman */;
+			targetProxy = 4F978C99281BF7AE00CD4D5F /* PBXContainerItemProxy */;
+		};
+		4F978CA4281BF7AE00CD4D5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F978C87281BF7AC00CD4D5F /* Postman */;
+			targetProxy = 4F978CA3281BF7AE00CD4D5F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4F978CAA281BF7AE00CD4D5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4F978CAB281BF7AE00CD4D5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4F978CAD281BF7AE00CD4D5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Postman/Preview Content\"";
+				DEVELOPMENT_TEAM = Z9HV438N39;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Postman/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krypted.devmodecurl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4F978CAE281BF7AE00CD4D5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Postman/Preview Content\"";
+				DEVELOPMENT_TEAM = Z9HV438N39;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Postman/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.krypted.devmodecurl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4F978CB0281BF7AE00CD4D5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z9HV438N39;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.malav.PostmanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Postman.app/Postman";
+			};
+			name = Debug;
+		};
+		4F978CB1281BF7AE00CD4D5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z9HV438N39;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.malav.PostmanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Postman.app/Postman";
+			};
+			name = Release;
+		};
+		4F978CB3281BF7AE00CD4D5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z9HV438N39;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.malav.PostmanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Postman;
+			};
+			name = Debug;
+		};
+		4F978CB4281BF7AE00CD4D5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z9HV438N39;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.malav.PostmanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Postman;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F978C83281BF7AC00CD4D5F /* Build configuration list for PBXProject "Postman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F978CAA281BF7AE00CD4D5F /* Debug */,
+				4F978CAB281BF7AE00CD4D5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F978CAC281BF7AE00CD4D5F /* Build configuration list for PBXNativeTarget "Postman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F978CAD281BF7AE00CD4D5F /* Debug */,
+				4F978CAE281BF7AE00CD4D5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F978CAF281BF7AE00CD4D5F /* Build configuration list for PBXNativeTarget "PostmanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F978CB0281BF7AE00CD4D5F /* Debug */,
+				4F978CB1281BF7AE00CD4D5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F978CB2281BF7AE00CD4D5F /* Build configuration list for PBXNativeTarget "PostmanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F978CB3281BF7AE00CD4D5F /* Debug */,
+				4F978CB4281BF7AE00CD4D5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B6518E7628340EAF00892F0B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		B6A7BB79282055AF00A5FEAE /* XCRemoteSwiftPackageReference "OIDCLite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitlab.com/Mactroll/OIDCLite";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B6518E7728340EAF00892F0B /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B6518E7628340EAF00892F0B /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		B6A7BB7A282055AF00A5FEAE /* OIDCLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B6A7BB79282055AF00A5FEAE /* XCRemoteSwiftPackageReference "OIDCLite" */;
+			productName = OIDCLite;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4F978C80281BF7AC00CD4D5F /* Project object */;
+}
