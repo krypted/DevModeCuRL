@@ -13,3 +13,7 @@ Supported HTTP methods include GET, POST, PUT, and DELETE. It can run anonymous 
 The responses are not parsed but for my purposes I don't want them parsed.
 
 <p><a href="url"><img src="https://github.com/krypted/DevModeCuRL/blob/main/Screenshots/response.png" height="400" width="200" ></a></p>
+
+# Dependencies
+
+Uses AlamoFire ( https://github.com/Alamofire/Alamofire ) and OIDCLite ( https://github.com/mactroll/OIDCLite ) from https://github.com/mactroll.
