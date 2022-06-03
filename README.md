@@ -8,7 +8,7 @@ This project can be compiled && run as a standalone app but has no branding and 
 
 Supported HTTP methods include GET, POST, PUT, and DELETE. It can run anonymous or use Basic Auth, Bearer Tokens, or OAuth 2. There are also options for arbitrary headers (implemented as apiHeaders:HTTPHeaders in the NetworkManager.swift) and parameters (implemented as apiParameters in the NetworkManager.swift). 
 
-<p><a href="url"><img src="https://github.com/krypted/DevModeCuRL/blob/main/Screenshots/example.png" height="400" width="200" ></a></p>
+<p><a href="url"><img src="https://github.com/krypted/DevModeCuRL/Screenshots/example.png" height="400" width="200" ></a></p>
 
 The responses are not parsed but for my purposes I don't want them parsed.
 
